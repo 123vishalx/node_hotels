@@ -5,7 +5,7 @@ const db = require('./db'); // Ensure this is correctly configured
 
 const personRoutes = require('./routes/personRoutes'); // Ensure this path is correct
 const MenuItems = require('./models/Menuitems'); // Ensure this path is correct
-
+const PORT = process.env.PORT || 8000;
 // Middleware to parse JSON bodies
 app.use(express.json());
 
